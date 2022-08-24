@@ -1,0 +1,102 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  /* percentage of user's browser font-size setting */
+  /* 10px/ 16px = 0.625 = 62.5%*/
+  font-size: 62.5%;
+  overflow-x: hidden;
+  /*scroll-behavior: smooth;*/
+  height: 100%;
+}
+
+body {
+  font-family: "Lora", serif;
+  line-height: 1;
+  font-weight: 400;
+  color: #2f2504;
+  background-color: #eee;
+  overflow-x: hidden;
+  height: 100%;
+}
+
+select {
+  border-radius: 3px;
+}
+
+.container {
+  max-width: 140rem;
+  margin: 0 auto;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 1rem;
+  margin-top: 2rem;
+  font-size: 3rem;
+}
+
+#div__outer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+#div__titles {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 2rem;
+}
+
+#pond {
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+
+#num {
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+#div__new,
+.div__pond_existing {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+#inp__new_count,
+.inp__count_existing {
+  width: 4rem;
+}
+
+#inp__new_pond,
+.div__name_existing {
+  width: 10rem;
+}
+
+.div__name_existing,
+.inp__count_existing,
+#inp__new_pond,
+#inp__new_count {
+  font-size: 1.8rem;
+}
+
+#btn {
+  margin-top: 1rem;
+  font-size: 1.8rem;
+  padding: 0.5rem 1rem;
+  background-color: #2f2504;
+  color: #eee;
+}
+
+#btn:hover,
+#btn:focus {
+  cursor: pointer;
+}
