@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.1/socket.io.js"
+      integrity="sha512-q/dWJ3kcmjBLU4Qc47E4A9kTB4m3wuTY7vkFJDTZKjTs8jhyGQnaUrxa0Ytd0ssMZhbNua9hE+E7Qv1j+DyZwA=="
+      crossorigin="anonymous"
+    ></script>
+    <!-- integrity="sha512-9mpsATI0KClwt+xVZfbcf2lJ8IFBAwsubJ6mI3rtULwyM3fBmQFzj0It4tGqxLOGQwGfJdk/G+fANnxfq9/cew=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Simple Counter</title>
+  </head>
+  <body>
+    <main class="container">
+      <h1>Hunt Data</h1>
+      <div id="div__outer">
+        <div id="div__titles">
+          <div id="pond">Pond</div>
+          <div id="num">#</div>
+        </div>
+        <div id="div_existing"></div>
+        <div id="div__new">
+          <input type="text" id="inp__new_pond" />
+          <input type="number" name="new_count" id="inp__new_count" />
+        </div>
+        <button id="btn">Update</button>
+      </div>
+    </main>
+  </body>
+
+  <script type="module" src="script.js"></script>
+</html>
